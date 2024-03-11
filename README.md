@@ -53,7 +53,6 @@ python app.py
 - Flask
 - HTML
 - CSS
-- JavaScript
 
 ## Contributions
 

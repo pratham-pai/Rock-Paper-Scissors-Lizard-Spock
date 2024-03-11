@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSLS Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Result:</h1>
+        <p class="mb-4">You chose: {{ user_choice }}</p>
+        <p class="mb-4">Computer chose: {{ computer_choice }}</p>
+        <p class="mb-4">{{ result }}</p>
+        {% if reason %}
+            <p class="mb-4">Reason: {{ reason }}</p>
+        {% endif %}
+        <a href="/" class="btn btn-primary">Play Again</a>
+    </div>
+</body>
+</html>

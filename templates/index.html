@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSLS Arena</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Welcome to RPSLS Arena!</h1>
+        <!-- Rules of the game section -->
+        <div class="mb-4">
+            <h2>Rules of the Game:</h2>
+            <ul>
+                <li>Scissors cuts paper</li>
+                <li>Paper covers rock</li>
+                <li>Rock crushes lizard</li>
+                <li>Lizard poisons Spock</li>
+                <li>Spock smashes scissors</li>
+                <li>Scissors decapitates lizard</li>
+                <li>Lizard eats paper</li>
+                <li>Paper disproves Spock</li>
+                <li>Spock vaporizes rock</li>
+                <li>Rock crushes scissors</li>
+            </ul>
+        </div>
+        <!-- Button container for choices -->
+        <div class="button-container">
+            <form action="/play" method="post">
+                <button type="submit" name="choice" value="Rock" class="btn btn-primary mr-2">Rock</button>
+                <button type="submit" name="choice" value="Paper" class="btn btn-primary mr-2">Paper</button>
+                <button type="submit" name="choice" value="Scissors" class="btn btn-primary mr-2">Scissors</button>
+                <button type="submit" name="choice" value="Lizard" class="btn btn-primary mr-2">Lizard</button>
+                <button type="submit" name="choice" value="Spock" class="btn btn-primary mr-2">Spock</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

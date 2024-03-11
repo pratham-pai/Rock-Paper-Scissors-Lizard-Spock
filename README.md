@@ -31,7 +31,7 @@ To run the application locally, follow these steps:
 
 1. Clone this repository to your local machine:
 
- - git clone https://github.com/your_username/rock-paper-scissors-lizard-spock.git
+ - git clone https://github.com/pratham-pai/rock-paper-scissors-lizard-spock.git
 
 2. Navigate to the project directory:
 
